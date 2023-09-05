@@ -1,0 +1,129 @@
+html {
+  font-size: 10px;
+  font-family: 'Open Sans', sans-serif;
+}
+
+h1{
+    font-size: 20px;
+    text-align: center;
+}
+
+h1 {
+  margin: 0;
+  padding: 20px 0;
+  color: white;
+ 
+}
+
+h2 {
+  font-size: 20px;
+  text-align: center;
+  
+}
+
+p{
+  font-size: 16px;
+  line-height: 1.5;
+  letter-spacing: 1px;
+  }
+
+
+li, ul{
+    font-size: 12px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    
+}
+
+
+html {
+  background-color: black;
+}
+
+body {
+  width: 700px;
+  margin: 0 auto;
+  background-color: green;
+  padding: 0 20px 20px 20px;
+  border: 5px solid white;
+}
+
+h2 {
+  margin: 0;
+  padding: 20px 0;
+  color: white;
+  text-shadow: 3px 3px 1px black;
+}
+
+img {
+  display: block;
+  margin: 0 auto;
+  width: 150px;
+  border-radius: 30px;
+}
+
+button{
+    border-radius: 30px;
+    background: white;
+}
+
+.container {
+  
+width: 80%;
+margin: 0 auto;
+}
+
+header {
+  background: white;
+}
+nav{
+    float: left;
+}
+
+/*Fixes the header (Nav bar). CSS tricks*/
+header::after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+nav ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+/*inline block allows nav to center*/
+nav li {
+  display: inline-block;
+  margin-left: 65px;
+  padding-top: 23px;
+  position: relative;
+}
+
+nav a{
+    color: #444;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+nav a:hover{
+    color: #000;
+}
+/*hover bar over nav text*/
+nav a:before{
+content: '';
+display: block;
+height: 5px;
+
+background-color: #444;
+
+position:absolute;
+top: 0;
+width: 0;
+}
+
+nav a:hover::before{
+    width: 100%;
+}
+
